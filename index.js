@@ -15,7 +15,7 @@ app.get('/api/whoami/', (req, res)=>{
         req.socket.remoteAddress ||
         req.connection.socket.remoteAddress;
     var jsonResult = {
-        'ipAddress': ip.split(':')[3],
+        'ipAddress': 'test',
         'Language': req.headers["accept-language"].split(',')[0],
         'Software': req.headers['user-agent'].split(') ')[0].split(' (')[1]
     }
