@@ -18,7 +18,6 @@
   "homepage": "https://github.com/nqdai1992/Request-Header-Parser-Microservice#readme",
   "dependencies": {
     "express": "^4.15.2",
-    "ipware": "^1.0.0",
     "path": "^0.12.7"
   }
 }
