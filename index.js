@@ -6,9 +6,7 @@ const express = require('express');
 const port = process.env.PORT||5000;
 
 var app = express();
-app.get('/', (req, res) => {
-   res.send('Hello world!')
-});
+app.use('/', express.static('public'));
 app.get('/api/whoami/', (req, res)=>{
     var ip = req.headers['x-forwarded-for'] ||
         req.connection.remoteAddress ||
